@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Redirecting to App...</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>
+      // Attempt to open the app
+      window.location.replace("hsekpi://observation");
+ 
+      // After 3 seconds, redirect to Play Store if app is not installed
+      setTimeout(function () {
+        window.location.replace("https://play.google.com/store/apps/details?id=com.hsekpi");
+      }, 3000);
+</script>
+</head>
+<body>
+<p>Opening the app... If nothing happens, <a href="https://play.google.com/store/apps/details?id=com.hsekpi">click here</a> to download it.</p>
+</body>
+</html>
